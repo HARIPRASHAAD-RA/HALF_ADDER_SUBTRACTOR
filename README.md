@@ -64,6 +64,15 @@ assign sum=(a^b);
 assign carry=(a&b);
 endmodule
 ```
+### HALF SUBTRACTOR
+```
+module ex3m2(a,b,diff,borr);
+input a,b;
+output diff,borr;
+assign diff=(a^b);
+assign borr=(~a&b);
+endmodule
+```
 
 
 
@@ -71,10 +80,14 @@ endmodule
 **RTL Schematic**
 ### HALF ADDER
 ![image](https://github.com/user-attachments/assets/ab8ece40-53c2-4f37-9fe9-94585b953659)
+### HALF SUBTRACTOR
+![image](https://github.com/user-attachments/assets/ac9913ae-176a-443f-a6c0-670c1c0d778d)
 
 **Output/TIMING Waveform**
 ### HALF ADDER
 ![image](https://github.com/user-attachments/assets/133c4e10-f6f2-4d46-8554-4ad0ddb5c7e9)
+### HALF SUBTRACTOR
+![image](https://github.com/user-attachments/assets/e4031bb5-9e2d-44a7-8875-71f6ec3b6b04)
 
 **Result:**
  The code is excecuted successfully.
